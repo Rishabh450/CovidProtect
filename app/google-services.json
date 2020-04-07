@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1079386601145",
+    "firebase_url": "https://covidprotect-e320a.firebaseio.com",
+    "project_id": "covidprotect-e320a",
+    "storage_bucket": "covidprotect-e320a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079386601145:android:74517e1b5d8d9f41da8d68",
+        "android_client_info": {
+          "package_name": "com.rishabh.covidprotect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079386601145-re2guircn0du1lch8m9q8cphquh8lh7v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rishabh.covidprotect",
+            "certificate_hash": "82662a7b6a4b77ec48aceb485a148770f134e69b"
+          }
+        },
+        {
+          "client_id": "1079386601145-j7vanh4a6mckevc7mv3fm56v6gl1b860.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATPZE_Mu6sSCf1GQ1RlfccdSWWHAqLP88"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079386601145-j7vanh4a6mckevc7mv3fm56v6gl1b860.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/login"
+    tools:context=".Activities.Login"
+    android:background="@mipmap/events_background"
+    >
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/ojass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="COVID-PROTECT"
+        android:fontFamily="@font/montserrat"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="6dp"
+            android:id="@+id/phone"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            app:cardElevation="6dp"
+            android:layout_height="45dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/phon_foreground"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Phone"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="6dp"
+            android:id="@+id/signin"
+            android:layout_marginTop="20dp"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            app:cardElevation="6dp"
+            android:layout_height="45dp"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/google_logo"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Google"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="250dp"
+            android:id="@+id/login_button"
+            android:layout_marginTop="20dp"
+
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true"
+            android:clickable="true"
+            android:layout_below="@+id/google_sign_in_btn"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="6dp"
+            app:cardElevation="6dp"
+            android:layout_height="45dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+
+                android:layout_gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:padding="2dp"
+                    android:src="@drawable/facebook_logo"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="#000000"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in with Facebook"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</RelativeLayout>
