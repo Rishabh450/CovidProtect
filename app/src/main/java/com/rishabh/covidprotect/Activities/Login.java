@@ -52,6 +52,7 @@ public class Login extends AppCompatActivity {
     private CallbackManager mCallbackManager;
     CardView signInButton;
     CardView facebook_sign_in;
+    CardView phone;
     FirebaseAuth.AuthStateListener mAuthstateListner;
 
     @Override
@@ -101,6 +102,7 @@ public class Login extends AppCompatActivity {
 
         mAuth = FirebaseAuth.getInstance();
         signInButton=findViewById(R.id.signin);
+        phone=findViewById(R.id.phone);
         facebook_sign_in=findViewById(R.id.login_button);
    /*     facebook_sign_in.setVisibility(View.VISIBLE);
         ObjectAnimator scaleDownX1 = ObjectAnimator.ofFloat(facebook_sign_in, "scaleX", 0.7f);
@@ -155,7 +157,13 @@ public class Login extends AppCompatActivity {
 // ...
 // Initialize Firebase Auth
 
-
+        phone.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(Login.this,PhoneNumber.class);
+                startActivity(intent);
+            }
+        });
         signInButton.setOnClickListener(new View.OnClickListener() {
             @Override
 
